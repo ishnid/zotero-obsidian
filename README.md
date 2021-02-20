@@ -61,25 +61,27 @@ This workflow ...
 # Set up Obsidian
 
 - Start Obsidian and create a new vault (anywhere) - this is the folder in which Obsidian will store everything.
-- Within Obsidian, create new folders called `papers` and `templates` (the latter is if you want to customise what goes in the notes - you can do without if you are happy with the defaults).
-- Copy the files from the [templates](templates/) directory in this repository into the `templates` directory.
+- If you want to customise what goes in the notes, within Obsidian create a new folder called `templates`. You can do without this if you are happy with the defaults).
+	- If you want to start with my templates, copy the files from the [templates](templates/) directory in this repository into the `templates` directory.
+	- Alternatively, the default Mdnotes templates are [here](https://argentinaos.com/zotero-mdnotes/docs/templates/). You should be most interested in the "Mdnotes Default Template" and "Zotero Note Template" templates. The former is for the main note for each paper. The second is for the extracted annotations.
 
 # Configure Zotero to export to Obsidian
 
 - In Zotero, open `Tools` → `Mdnotes Preferences`.
 - Under "File organization", choose "Single file".
-- Set the "Export directory" to be the `papers` directory that you created in your Obsidian vault.
+- Set the "Export directory" to be the directory that your Obsidian vault is in.
 - If you created a `templates` directory in Obsidian, set the "Template folder" to be this one. If you are happy to start with the default templates, you can leave this blank.
 
 # Now you're ready to export a paper from Zotero to Obsidian!
 
 - In your Zotero library, right click on the paper and then choose `Mdnotes` → `Create full export note`.
-- You will be given the option to choose the export folder. It will default to your Obsidian `papers` folder (if you've completed the above steps correctly), so you can just click "Open".
+- You will be given the option to choose the export folder. It will default to your Obsidian vault folder (if you've completed the above steps correctly), so you can just click "Open".
 
 # OK so what happened?
 
-- There is now a note in your Obsidian `papers` folder. Its name is the citation key of the paper.
+- There is now a note in your Obsidian vault. Its name is the citation key of the paper.
 - **Caution**: If you edit this note directly in Obsidian, your changes will be lost if you ever re-export from Zotero.
 	- To solve this, my template (see above) contains a link within the "My Notes" section. If you click on that it will create a separate note (which will not be overwritten by a Zotero export) that is displayed within the main note.
-	- By default, this note is stored in your main vault. There is an option in the "Files & Links" section of the Obsidian preferences where you can change this behaviour.
+- **Caution**: If you habitually create notes that have the same pattern as your citations keys, these may be overwritten accidentally if there's a clash. If this is an issue, you could create a `papers` subfolder (for example) to store your exported Zotero notes.
 - Now you can link to this note from anywhere using the "[[Lillis2021]]" syntax. Better still, if you hover over such a link you will see the title and authors without having to click into it.
+	- Additionally, if you create a [[Lillis2021]]-style link before you have a note by that name, it will point to the exported Zotero note once you have performed the export.
