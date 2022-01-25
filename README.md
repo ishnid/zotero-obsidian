@@ -63,7 +63,7 @@ This workflow ...
 - Start Obsidian and create a new vault (anywhere) - this is the folder in which Obsidian will store everything.
 - If you want to customise what goes in the notes, within Obsidian create a new folder called `templates`. You can do without this if you are happy with the defaults.
 	- If you want to start with my templates, copy the files from the [templates](templates/) directory in this repository into the `templates` directory.
-	- Alternatively, the default Mdnotes templates are [here](https://argentinaos.com/zotero-mdnotes/docs/templates/). You should be most interested in the "Mdnotes Default Template" and "Zotero Note Template" templates. The former is for the main note for each paper. The second is for the extracted annotations.
+	- Alternatively, the default Mdnotes templates are [here](https://argentinaos.com/zotero-mdnotes/docs/advanced/templates/defaults). You should be most interested in the "Mdnotes Default Template" and "Zotero Note Template" templates. The former is for the main note for each paper. The second is for the extracted annotations.
 
 # Configure Zotero to export to Obsidian
 
